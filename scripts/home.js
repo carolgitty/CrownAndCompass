@@ -33,3 +33,7 @@ function renderCards(type, gridId) {
 function goToDetails(id, type) {
   window.location.href = `details.html?id=${id}&type=${type}`;
 }
+
+function goTo(page) {
+  window.location.replace(`index.html#${page}`);
+}

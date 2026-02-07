@@ -25,7 +25,7 @@ const DATA = {
       price: "$2,500/night",
       unit: "Per day",
       description: "Royal Atlantis",
-      image: "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+      image: "gallery/hotels/ritz.jpeg"
     },    
     {
       id: 4,
@@ -34,7 +34,7 @@ const DATA = {
       price: "$12,500/night",
       unit: "Per day",
       description: "Golf Club in Cancona, Goa.",
-      image: "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+      image: "gallery/hotels/burj.jpeg"
     }
   ],
 

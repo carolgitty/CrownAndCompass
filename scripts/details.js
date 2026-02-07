@@ -31,3 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     endDate.min = startDate.value;
   });
 });
+
+function goTo(page) {
+  window.location.replace(`index.html#${page}`);
+}

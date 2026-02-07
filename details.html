@@ -75,9 +75,7 @@
 </div>
 
 <div class="max-w-5xl mx-auto p-4">
-  <form
-    action="https://formspree.io/f/mrbkvarw"
-    method="POST"
+  <form action="https://formspree.io/f/mjgevrby" method="POST"
     class="grid grid-cols-1 md:grid-cols-2 gap-6 lux-card">
 
     <!-- LEFT -->
@@ -100,28 +98,26 @@
 <!-- RIGHT -->
 <div class="space-y-4">
 
-  <input type="hidden" id="_hiddenName" name="Name">
-  <input type="hidden" id="_hiddenId" name="Id">
-  <input type="hidden" id="_hiddenLocation" name="Location">
+  <input type="hidden" id="_hiddenName" name="InterestedIn">
 
   <!-- Check In -->
   <div class="grid grid-cols-3 items-center gap-4">
-    <label class="lux-label col-span-1">Check In</label>
-    <input type="date" name="startDate"
+    <label class="lux-label col-span-1">Start Date</label>
+    <input type="date" name="startDate" required
       class="lux-input bg-white text-black col-span-2">
   </div>
 
   <!-- Check Out -->
   <div class="grid grid-cols-3 items-center gap-4">
-    <label class="lux-label col-span-1">Check Out</label>
-    <input type="date" name="endDate"
+    <label class="lux-label col-span-1">End Date</label>
+    <input type="date" name="endDate" required
       class="lux-input bg-white text-black col-span-2">
   </div>
 
   <!-- Name -->
   <div class="grid grid-cols-3 items-center gap-4">
     <label class="lux-label col-span-1">Full Name</label>
-    <input type="text" name="name" required
+    <input type="text" name="customerName" required
       class="lux-input bg-white text-black col-span-2">
   </div>
 
@@ -138,9 +134,14 @@
     <input type="tel" name="phone" required
       class="lux-input bg-white text-black col-span-2">
   </div>
+
+  <div class="grid grid-cols-3 items-center gap-4">
+    <label class="lux-label">Special Requests</label>
+    <textarea rows="2" name="message" class="lux-textarea bg-white text-black col-span-2"></textarea>
+    </div>
   
   <!-- RESERVE -->
-  <div class="grid grid-cols-3 items-center gap-4">
+  <div class="grid grid-cols-1 items-center gap-4">
     <button type="submit" class="lux-btn w-full">
         RESERVE NOW
 

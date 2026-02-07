@@ -1,5 +1,5 @@
 body::before {
-  content: "Default View";
+  /* content: "Default View"; */
   position: fixed;
   top: 0;
   left: 0;
@@ -12,14 +12,14 @@ body::before {
 
 @media (max-width: 768px) {
   body::before {
-    content: "Tablet View";
+    /* content: "Tablet View"; */
     background: blue;
   }
 }
 
 @media (max-width: 480px) {
   body::before {
-    content: "Mobile View";
+    /* content: "Mobile View"; */
     background: green;
   }
 }
