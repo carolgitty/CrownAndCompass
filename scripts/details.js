@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("location").innerText = item.location;
   document.getElementById("image").src = item.image;
 
+  const message = `I am interested in Type-${type}---Item-${item.name}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  document.getElementById('whatsappLink').href = url;
+
+  // document.getElementById("price").innerText = item.price;
+  // document.getElementById("unit").innerText = item.unit;
+
   // Form
   document.getElementById("_hiddenName").value =
   `${type.toUpperCase()} - ${item.name}`;
@@ -32,5 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function goTo(page) {
   window.location.replace(`index.html#${page}`);
-
 }
