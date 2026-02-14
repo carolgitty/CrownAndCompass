@@ -16,7 +16,6 @@ function renderCards(type, gridId) {
         onkeypress="if(event.key==='Enter'){goToDetails(${item.id}, '${type}')}">
 
         <div class="card-img">
-          <span class="price">${item.price}</span>
           <img src="${item.image}" alt="${item.name}">
         </div>
 
@@ -36,4 +35,5 @@ function goToDetails(id, type) {
 
 function goTo(page) {
   window.location.replace(`index.html#${page}`);
+
 }
