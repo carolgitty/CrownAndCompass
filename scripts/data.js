@@ -89,3 +89,5 @@ const DATA = {
     }
   ]
 };
+
+const phone = '971968627120'; // country code + number (no +)
