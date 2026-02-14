@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("description").innerText = item.description;
   document.getElementById("location").innerText = item.location;
   document.getElementById("image").src = item.image;
-  document.getElementById("price").innerText = item.price;
-  document.getElementById("unit").innerText = item.unit;
 
   // Form
   document.getElementById("_hiddenName").value =
@@ -34,4 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function goTo(page) {
   window.location.replace(`index.html#${page}`);
+
 }
