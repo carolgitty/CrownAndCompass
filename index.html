@@ -16,65 +16,62 @@
 
 
 </head>
-<body class=" font-sans ">
-  <header class="sticky top-0 z-50 pb-15 text-center text-[#c9a962]">
-<header class="sticky bg-gradient-to-r from-black to-brown top-0 z-50 text-gold pb-20 text-center">
+<body class=" font-sans text-[#c9a962]">
+<header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-brown">
+  <nav class="shadow w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
 
-      <header class="absolute inset-x-0 top-0 z-50">
-  <!-- NAVBAR -->
-<nav class="shadow fixed w-full z-20 ">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <!-- Logo -->
-      <a href="#home" class="text-xl font-bold flex">
-        <img src="images/logo.png" alt="Crown and Compass Logo" class="lucide lucide-crown h-12 w-12 mr-2 " > 
-        <span class="text-2xl font-light tracking-[0.2em]">Crown and Compass</span>
-      </a>
+        <!-- Logo -->
+        <a href="#home" class="flex items-center text-gold">
+          <img src="images/logo.png" alt="Crown and Compass Logo"
+               class="h-12 w-12 mr-2">
+          <span class="text-2xl font-light tracking-[0.2em]">
+            Crown and Compass
+          </span>
+        </a>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a class="text-gold hover:text-indigo-600" 
-        href="#home" >Home</a>
-        <a class="text-gold hover:text-indigo-600" 
-        onclick="goTo('hotels')" href="#hotels">Hotels</a>
-        <a class="text-gold hover:text-indigo-600" 
-        onclick="goTo('yachts')" href="#yachts">Yachts</a>
-        <a class="text-gold hover:text-indigo-600" 
-        onclick="goTo('cars')" href="#cars">Cars</a>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a class="text-gold hover:text-indigo-600" href="#home">Home</a>
+          <a class="text-gold hover:text-indigo-600" onclick="goTo('hotels')" href="#hotels">Hotels</a>
+          <a class="text-gold hover:text-indigo-600" onclick="goTo('yachts')" href="#yachts">Yachts</a>
+          <a class="text-gold hover:text-indigo-600" onclick="goTo('cars')" href="#cars">Cars</a>
+        </div>
+
+        <!-- Hamburger -->
+        <a href="#menu" class="md:hidden p-2">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor"
+               stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+      class="md:hidden fixed inset-0 bg-white/95 p-6 translate-x-full
+             transition-transform duration-300 ease-in-out target:translate-x-0">
+
+      <div class="flex justify-between items-center mb-6">
+        <span class="text-xl font-bold text-indigo-600">Menu</span>
+        <a href="#" class="p-2">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor"
+               stroke-width="2" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </a>
       </div>
 
-      <!-- Hamburger Menu -->
-      <a href="#menu" class="md:hidden p-2">
-        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </a>
+      <a class="block py-3 text-gold" href="#home">Home</a>
+      <a class="block py-3 text-gold" href="#hotels">Hotels</a>
+      <a class="block py-3 text-gold" href="#yachts">Yachts</a>
+      <a class="block py-3 text-gold" href="#cars">Cars</a>
     </div>
-  </div>
+  </nav>
+</header>
 
-  <!-- Mobile Menu -->
-  <div id="menu" class="md:hidden fixed inset-0 bg-white/90  p-6 translate-x-full 
-  transition-transform duration-300 ease-in-out target:translate-x-0">
-    <div class="flex justify-between items-center mb-6">
-      <span class="text-xl font-bold text-indigo-600">Menu</span>
-      <a href="#home" class="p-2">
-        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </a>
-    </div>
-
-    <a class="block py-3 text-gold hover:text-indigo-600 bg-white" onclick="goTo('home')" href="#home">Home</a>
-    <a class="block py-3 text-gold hover:text-indigo-600 bg-white" onclick="goTo('hotels')" href="#hotels">Hotels</a>
-    <a class="block py-3 text-gold hover:text-indigo-600 bg-white" onclick="goTo('yachts')" href="#yachts">Yachts</a>
-    <a class="block py-3 text-gold hover:text-indigo-600 bg-white" onclick="goTo('cars')"  href="#cars">Cars</a>
-  </div>
-</nav>
-
-  </header>
-  </header>
-  
-  </header>
 
 <div id="google_translate_element" style="display:none;"></div>
 
