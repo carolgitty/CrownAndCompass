@@ -8,6 +8,7 @@ function renderCards(type, gridId) {
   const grid = document.getElementById(gridId);
 
   DATA[type].forEach(item => {
+    imageLink = "images/hotels" + item.id + ".jpg";
     grid.innerHTML += `
       <div class="card"
         role="button"
@@ -16,7 +17,7 @@ function renderCards(type, gridId) {
         onkeypress="if(event.key==='Enter'){goToDetails(${item.id}, '${type}')}">
 
         <div class="card-img">
-          <img src="${item.image}" alt="${item.name}">
+          <img src="${imageLink}" alt="${item.name}">
         </div>
 
         <div class="card-body">
