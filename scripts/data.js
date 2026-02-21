@@ -71,7 +71,7 @@ const hotelList = [
   },
   {
     "rank": 11,
-    "name": "Upper House Hong Kong",
+    "name": "Jumeirah Marsa Al Arab",
     "city": "Dubai",
     "country": "Dubai, Unite Arab Emrates",
     "description": "Jumeirah Marsa Al Arab isn't just another addition to Dubai's skyline – it completes it. Alongside the Burj Al Arab's sail and Jumeirah Beach Hotel's wave, this yacht-shaped newcomer is the final piece of Jumeirah's oceanfront trilogy."
@@ -121,6 +121,7 @@ const DATA = {
 };
 
 const phone = '+971522878161'; // country code + number (no +)
+
 
 
 
