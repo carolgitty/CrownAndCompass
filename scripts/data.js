@@ -81,50 +81,8 @@ const hotelList = [
   }
 ];
 const DATA = {
-  hotel : hotelList,
-  hotel_old: [
-    {
-      id: 1,
-      name: "Royal Atlantis",
-      location: "Dubai, UAE",
-      price: "$2,800/night",
-      unit: "Per day",
-      description: "Royal Atlantis",
-      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd"
-    },
-    {
-      id: 2,
-      name: "Bora Bora Resort",
-      location: "French Polynesia",
-      price: "$3,200/night",
-      unit: "Per day",
-      description: "Royal Atlantis",
-      image: "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
-    },
-    {
-      id: 3,
-      name: "The Ritz Palace",
-      location: "Paris, France",
-      price: "$2,500/night",
-      unit: "Per day",
-      description: "Royal Atlantis",
-      image: "gallery/hotels/ritz.jpeg"
-    },    
-    {
-      id: 4,
-      name: "The Leela Palace",
-      location: "Goa, India",
-      price: "$12,500/night",
-      unit: "Per day",
-      description: "Golf Club in Cancona, Goa.",
-      image: "gallery/hotels/burj.jpeg"
-    },
-    {
-
-    }
-  ],
-
-  yacht: [
+  hotels : hotelList,
+  yachts: [
     {
       id: 1,
       name: "Azzam",
@@ -144,8 +102,7 @@ const DATA = {
       image: "https://images.unsplash.com/photo-1540541338287-41700207dee6"
     }
   ],
-
-  car: [
+  cars: [
     {
       id: 1,
       name: "Ferrari SF90 Stradale",
@@ -177,3 +134,4 @@ const DATA = {
 };
 
 const phone = '+971522878161'; // country code + number (no +)
+
