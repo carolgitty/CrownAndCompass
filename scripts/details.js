@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("name").innerText = item.name;
   document.getElementById("description").innerText = item.description;
   document.getElementById("location").innerText = item.city;
-  document.getElementById("image").src = "images/hotels/" + item.rank + ".jpg";
+  document.getElementById("image").src = "images/" + type "/" + item.rank + ".jpg";
   const message = `I am interested in Type-${type}---Item-${item.name}`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   document.getElementById('whatsappLink').href = url;
@@ -39,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
 function goTo(page) {
   window.location.replace(`index.html#${page}`);
 }
+
