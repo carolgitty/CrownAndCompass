@@ -84,7 +84,7 @@ const DATA = {
   hotels : hotelList,
   yachts: [
     {
-      id: 1,
+      rank: 1,
       name: "Azzam",
       location: "Monaco",
       price: "$480,000/day",
@@ -93,7 +93,7 @@ const DATA = {
       image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166"
     },
     {
-      id: 2,
+      rank: 2,
       name: "Serenity",
       location: "French Riviera",
       price: "$95,000/day",
@@ -104,7 +104,7 @@ const DATA = {
   ],
   cars: [
     {
-      id: 1,
+      rank: 1,
       name: "Ferrari SF90 Stradale",
       location: "Dubai, UAE",
       price: "$3,200/day",
@@ -113,7 +113,7 @@ const DATA = {
       image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888"
     },
     {
-      id: 2,
+      rank: 2,
       name: "Rolls Royce Phantom",
       location: "London",
       price: "$2,500/day",
@@ -122,7 +122,7 @@ const DATA = {
       image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     },
     {
-      id: 3,
+      rank: 3,
       name: "Lamborghini Revuelto",
       location: "Monaco",
       price: "$3,800/day",
@@ -134,4 +134,5 @@ const DATA = {
 };
 
 const phone = '+971522878161'; // country code + number (no +)
+
 
