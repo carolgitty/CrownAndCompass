@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("name").innerText = item.name;
   document.getElementById("description").innerText = item.description;
   document.getElementById("location").innerText = item.location;
-  document.getElementById("image").src = item.image;
-
+  document.getElementById("image").src = "images/hotels/" + item.id + ".jpg";
   const message = `I am interested in Type-${type}---Item-${item.name}`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   document.getElementById('whatsappLink').href = url;

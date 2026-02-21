@@ -80,7 +80,7 @@ const hotelList = [
     "description": "Design-led urban sanctuary with serene interiors and panoramic views of Victoria Harbour. :contentReference[oaicite:10]{index=10}"
   }
 ];
-const DATA= {
+const DATA = {
   hotel : hotelList,
   hotel_old: [
     {
