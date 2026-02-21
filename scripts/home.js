@@ -8,7 +8,7 @@ function renderCards(type, gridId) {
   const grid = document.getElementById(gridId);
 
   DATA[type].forEach(item => {
-    imageLink = "images/hotels/" + item.rank + ".jpg";
+    imageLink = "images/" + type + "/" + item.rank + ".jpg";
     grid.innerHTML += `
       <div class="card"
         role="button"
@@ -38,4 +38,5 @@ function goTo(page) {
   window.location.replace(`index.html#${page}`);
 
 }
+
 
