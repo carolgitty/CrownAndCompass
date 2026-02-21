@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const id = Number(params.get("id"));
   const type = params.get("type");
 
-  const item = DATA[type]?.find(i => i.id === id);
+  const item = DATA[type]?.find(i => i.rank === id);
 
   if (!item) {
     console.log("Item not found");
@@ -39,5 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function goTo(page) {
   window.location.replace(`index.html#${page}`);
 }
+
 
 
