@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  renderCards("hotel", "hotelsGrid");
-  renderCards("yacht", "yachtsGrid");
-  renderCards("car", "carsGrid");
+  renderCards("hotels", "hotelsGrid");
+  renderCards("yachts", "yachtsGrid");
+  renderCards("cars", "carsGrid");
 });
 
 function renderCards(type, gridId) {
@@ -38,3 +38,4 @@ function goTo(page) {
   window.location.replace(`index.html#${page}`);
 
 }
+
