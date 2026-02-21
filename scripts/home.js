@@ -21,7 +21,7 @@ function renderCards(type, gridId) {
 
         <div class="card-body">
           <h3>${item.name}</h3>
-          <p>${item.location}</p>
+          <p>${item.city}</p>
         </div>
       </div>
     `;
