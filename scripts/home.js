@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderCards(type, gridId) {
   const grid = document.getElementById(gridId);
 
-  DATA[type].forEach(item => {
+  DATA[type].sort((a, b) => a.rank - b.rank).forEach(item => {
     imageLink = "images/" + type + "/" + item.rank + ".jpg";
     grid.innerHTML += `
       <div class="card"
@@ -38,5 +38,6 @@ function goTo(page) {
   window.location.replace(`index.html#${page}`);
 
 }
+
 
 
