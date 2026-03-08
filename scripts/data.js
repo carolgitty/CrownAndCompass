@@ -1,10 +1,11 @@
 const hotelList = [
+  
   {
     "rank": 1,
-    "name": "Rosewood Hong Kong",
-    "city": "Hong Kong",
-    "country": "Hong Kong SAR, China",
-    "description": "Luxurious waterfront hotel on Victoria Harbour with panoramic skyline views and world-class dining — ranked No.1 on The World’s 50 Best Hotels 2025."
+    "name": "Atlantis The Royal",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "description": "Spectacular beachfront luxury resort with dramatic architecture, private beach access and world-class amenities." 
   },
   {
     "rank": 2,
@@ -33,13 +34,13 @@ const hotelList = [
     "city": "Singapore",
     "country": "Singapore",
     "description": "Iconic colonial-era landmark hotel in Singapore, famed for its grandeur and as birthplace of the Singapore Sling cocktail. "
-  },
+  },  
   {
     "rank": 6,
-    "name": "Atlantis The Royal",
-    "city": "Dubai",
-    "country": "United Arab Emirates",
-    "description": "Spectacular beachfront luxury resort with dramatic architecture, private beach access and world-class amenities." 
+    "name": "Rosewood Hong Kong",
+    "city": "Hong Kong",
+    "country": "Hong Kong SAR, China",
+    "description": "Luxurious waterfront hotel on Victoria Harbour with panoramic skyline views and world-class dining — ranked No.1 on The World’s 50 Best Hotels 2025."
   },
   {
     "rank": 7,
@@ -70,7 +71,7 @@ const hotelList = [
     "description": "Design-led urban sanctuary with serene interiors and panoramic views of Victoria Harbour. "
   },
   {
-    "rank": 11,
+    "rank": 2,
     "name": "Jumeirah Marsa Al Arab",
     "city": "Dubai",
     "country": "Dubai, Unite Arab Emrates",
@@ -121,6 +122,7 @@ const DATA = {
 };
 
 const phone = '+971522878161'; // country code + number (no +)
+
 
 
 
