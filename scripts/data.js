@@ -9,10 +9,10 @@ const hotelList = [
   },
   {
     "rank": 2,
-    "name": "Four Seasons Bangkok at Chao Phraya River",
-    "city": "Bangkok",
-    "country": "Thailand",
-    "description": "Riverside luxury resort with elegant rooms, infinity pools and Thai hospitality overlooking the Chao Phraya River. "
+    "name": "Jumeirah Marsa Al Arab",
+    "city": "Dubai",
+    "country": "Dubai, Unite Arab Emrates",
+    "description": "Jumeirah Marsa Al Arab isn't just another addition to Dubai's skyline – it completes it. Alongside the Burj Al Arab's sail and Jumeirah Beach Hotel's wave, this yacht-shaped newcomer is the final piece of Jumeirah's oceanfront trilogy."
   },
   {
     "rank": 3,
@@ -69,13 +69,6 @@ const hotelList = [
     "city": "Hong Kong",
     "country": "Hong Kong SAR, China",
     "description": "Design-led urban sanctuary with serene interiors and panoramic views of Victoria Harbour. "
-  },
-  {
-    "rank": 2,
-    "name": "Jumeirah Marsa Al Arab",
-    "city": "Dubai",
-    "country": "Dubai, Unite Arab Emrates",
-    "description": "Jumeirah Marsa Al Arab isn't just another addition to Dubai's skyline – it completes it. Alongside the Burj Al Arab's sail and Jumeirah Beach Hotel's wave, this yacht-shaped newcomer is the final piece of Jumeirah's oceanfront trilogy."
   }
 ];
 const DATA = {
@@ -117,11 +110,19 @@ const DATA = {
       location: "Monaco",
       description: "Royal Atlantis",
       image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b"
+    },
+    {
+      "rank": 2,
+      "name": "Four Seasons Bangkok at Chao Phraya River",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "description": "Riverside luxury resort with elegant rooms, infinity pools and Thai hospitality overlooking the Chao Phraya River. "
     }
   ]
 };
 
 const phone = '+971522878161'; // country code + number (no +)
+
 
 
 
