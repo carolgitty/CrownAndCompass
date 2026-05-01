@@ -76,3 +76,111 @@ body {
   letter-spacing: .12em;
   padding: 12px;
 }
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.payment-card {
+  width: 136px;
+  height: 62px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #101010;
+  background: #f8f8f8;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.payment-card-mastercard {
+  background: linear-gradient(135deg, #d9f4ff 0%, #54a9dc 100%);
+  font-size: 16px;
+}
+
+.mastercard-mark {
+  position: relative;
+  width: 38px;
+  height: 26px;
+  flex: 0 0 auto;
+}
+
+.mastercard-mark::before,
+.mastercard-mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.mastercard-mark::before {
+  left: 0;
+  background: #eb001b;
+}
+
+.mastercard-mark::after {
+  right: 0;
+  background: rgba(247, 158, 27, 0.92);
+}
+
+.payment-card-visa {
+  color: #193a9b;
+  background: linear-gradient(180deg, #ffffff 0%, #ececec 100%);
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.payment-card-amex {
+  color: #ffffff;
+  background: linear-gradient(180deg, #68c8ee 0%, #1488c8 100%);
+  font-size: 16px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.payment-card-bitcoin {
+  color: #111111;
+  background: #ffffff;
+  font-size: 24px;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.bitcoin-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7931a;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: line-through;
+}
+
+@media (max-width: 480px) {
+  .payment-methods {
+    gap: 10px;
+  }
+
+  .payment-card {
+    width: 132px;
+    height: 56px;
+  }
+}

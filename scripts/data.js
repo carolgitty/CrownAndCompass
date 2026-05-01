@@ -121,7 +121,7 @@ const DATA = {
   ]
 };
 
-const phone = '+971522878161'; // country code + number (no +)
+const phone = '+971527364002'; // country code + number (no +)
 
 
 
