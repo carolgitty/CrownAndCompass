@@ -77,14 +77,14 @@ const DATA = {
     {
       rank: 1,
       name: "Azzam",
-      location: "Monaco",
+      location: "Dubai, UAE",
       description: "Royal Atlantis",
       image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166"
     },
     {
       rank: 2,
       name: "Serenity",
-      location: "French Riviera",
+      location: "Monaco, Saint-Tropez, Cannes",
       description: "Royal Atlantis",
       image: "https://images.unsplash.com/photo-1540541338287-41700207dee6"
     }
@@ -110,13 +110,6 @@ const DATA = {
       location: "Monaco",
       description: "Royal Atlantis",
       image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b"
-    },
-    {
-      "rank": 2,
-      "name": "Four Seasons Bangkok at Chao Phraya River",
-      "city": "Bangkok",
-      "country": "Thailand",
-      "description": "Riverside luxury resort with elegant rooms, infinity pools and Thai hospitality overlooking the Chao Phraya River. "
     }
   ]
 };

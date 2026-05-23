@@ -8,7 +8,8 @@ function renderCards(type, gridId) {
   const grid = document.getElementById(gridId);
 
   DATA[type].sort((a, b) => a.rank - b.rank).forEach(item => {
-    imageLink = "images/" + type + "/" + item.rank + ".jpg";
+    const imageLink = "images/" + type + "/" + item.rank + ".jpg";
+    const summary = item.city || item.location || "";
     grid.innerHTML += `
       <div class="card"
         role="button"
@@ -22,7 +23,7 @@ function renderCards(type, gridId) {
 
         <div class="card-body">
           <h3>${item.name}</h3>
-          <p>${item.city}</p>
+          <p>${summary}</p>
         </div>
       </div>
     `;

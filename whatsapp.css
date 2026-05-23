@@ -1,25 +1,39 @@
 /* whatsapp.css */
-.whatsapp-float {
+.contact-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.contact-float__button {
   width: 60px;
   height: 60px;
-  background-color: #25D366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
 }
 
-.whatsapp-float:hover {
+.contact-float__button:hover {
   transform: scale(1.1);
 }
 
-.whatsapp-float img {
+.contact-float__button img,
+.contact-float__button svg {
   width: 35px;
   height: 35px;
+}
+
+.whatsapp-float {
+  background-color: #25D366;
+}
+
+.telegram-float {
+  background-color: #229ED9;
 }
