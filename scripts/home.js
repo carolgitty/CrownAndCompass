@@ -1,8 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+  setupContactDetails();
   renderCards("hotels", "hotelsGrid");
   renderCards("yachts", "yachtsGrid");
   renderCards("cars", "carsGrid");
 });
+
+function setupContactDetails() {
+  const phoneNumber = phone.replace(/\D/g, "");
+  const formattedPhone = phone.replace(/^\+971(\d{2})(\d{3})(\d{4})$/, "+971 $1 $2 $3");
+
+  document.querySelectorAll(".contact-phone").forEach(element => {
+    element.textContent = formattedPhone;
+  });
+
+  document.querySelectorAll("[data-whatsapp-message]").forEach(link => {
+    const message = link.dataset.whatsappMessage;
+    link.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  });
+}
 
 function renderCards(type, gridId) {
   const grid = document.getElementById(gridId);

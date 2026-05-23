@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("location").innerText = item.city || item.location || "";
   document.getElementById("image").src = "images/" + type + "/" + item.rank + ".jpg";
   const message = `I am interested in Type-${type}---Item-${item.name}`;
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const phoneNumber = phone.replace(/\D/g, "");
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   document.getElementById('whatsappLink').href = url;
 
   // document.getElementById("price").innerText = item.price;
